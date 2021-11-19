@@ -1,7 +1,7 @@
 # Maps Riset
 ## _Irpan Abdul Rahman_
 
-for access the project in your device please clone this repository
+for access the project in your device please clone this repository.
 clone via https :
 ```sh
 https://github.com/irpanrain/maps-riset.git
