@@ -2,7 +2,7 @@ import GeoJSON from 'ol/format/GeoJSON';
 import Map from 'ol/Map';
 import View from 'ol/View';
 import {Circle as CircleStyle, Fill, Stroke, Style} from 'ol/style';
-import {OSM, Vector, Vector as VectorSource} from 'ol/source';
+import {OSM, Vector as VectorSource} from 'ol/source';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import WebGLPointsLayer from "ol/layer/WebGLPoints";
 import { fromLonLat } from "ol/proj";
@@ -11,13 +11,12 @@ import { fromLonLat } from "ol/proj";
 let limit = 100;
 
 let source = new VectorSource({
-  // url: 'http://127.0.0.1:8000/api/latest_position',
-  url: 'http://127.0.0.1:8000/api/previous_position?limit='+limit,
+  url: 'http://127.0.0.1:8000/api/previous_position?limit='+limit, //you can change this url for load your geojson data
   format: new GeoJSON(),
 });
 
 let secondSource = new VectorSource({
-  url: 'http://127.0.0.1:8000/api/latest_position?limit='+limit,
+  url: 'http://127.0.0.1:8000/api/latest_position?limit='+limit, //you can change this url for load your geojson data
   format: new GeoJSON(),
 });
 
@@ -169,7 +168,6 @@ if (navigator.geolocation) {
         source: new OSM(),
         maxZoom: 15
       }),
-      // pointsLayer,
     ],
     target: 'map',
     view: view,
