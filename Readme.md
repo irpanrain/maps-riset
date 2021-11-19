@@ -3,9 +3,13 @@
 
 for access the project in your device please clone this repository
 clone via https :
-[https://github.com/irpanrain/maps-riset.git]
+```sh
+https://github.com/irpanrain/maps-riset.git
+```
 clone via ssh :
-[git@github.com:irpanrain/maps-riset.git]
+```sh
+git@github.com:irpanrain/maps-riset.git
+```
 
 ## Installation
 
@@ -43,7 +47,5 @@ http://localhost:1234
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-[https://github.com/irpanrain/maps-riset.git]: <https://github.com/irpanrain/maps-riset.git>
-[git@github.com:irpanrain/maps-riset.git]: <git@github.com:irpanrain/maps-riset.git>
 [https://openlayers.org/en/latest/doc/]: <https://openlayers.org/en/latest/doc/>
 [https://parceljs.org/docs/]: <https://parceljs.org/docs/>
